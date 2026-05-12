@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+
+# Virtual envs
+venv/
+.venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Trained model artefacts — too big for git (DistilBERT ~250 MB)
+results/models/
+
+# Outputs we'll regenerate per-machine
+gensim-data/
+
+# Editors
+.vscode/
+.idea/
+
+# Don't track parquet copies of splits if CSVs are present
+data/processed/*.parquet
