@@ -116,7 +116,7 @@ def main() -> None:
     trainer = Trainer(
         model=model, args=args,
         train_dataset=train_ds, eval_dataset=val_ds,
-        tokenizer=tokenizer, data_collator=collator,
+        processing_class=tokenizer, data_collator=collator,
         compute_metrics=compute_metrics,
     )
 
